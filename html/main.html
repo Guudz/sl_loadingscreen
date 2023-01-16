@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Web 1920 – 1</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<style id="applicationStylesheet" type="text/css">
+@font-face {
+  font-family: Calibribat;
+  src: url(Calibribat-Bold.ttf);
+}
+	.mediaViewInfo {
+		--web-view-name: Canvas;
+		--web-view-id: Canvas;
+		--web-scale-to-fit: true;
+		--web-scale-to-fit-type: width;
+		--web-enable-scale-up: true;
+		--web-scale-on-resize: true;
+		--web-center-vertically: true;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: Canvas;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	body::-webkit-scrollbar {
+  display: none;
+}
+body {
+	overflow: hidden;
+}
+#Canvas {
+		position: absolute;
+		width: 1920px;
+		height: 1080px;
+		background-color: rgba(0,0,0,0);
+		overflow: hidden;
+		--web-view-name: Canvas;
+		--web-view-id: Canvas;
+		--web-scale-to-fit: true;
+		--web-scale-to-fit-type: width;
+		--web-enable-scale-up: true;
+		--web-scale-on-resize: true;
+		--web-center-vertically: true;
+		--web-enable-deep-linking: true;
+	}
+	#Gruppe_1 {
+		position: absolute;
+		width: 451px;
+		height: 792px;
+		left: 743px;
+		top: 16px;
+		overflow: visible;
+	}
+	* {
+		user-select: none;
+	}
+	#Canvas {
+		position: absolute;
+		width: 1920px;
+		height: 1080px;
+		background-color: rgba(0, 0, 0, 0);
+		overflow: hidden;
+		--web-view-name: Canvas;
+		--web-view-id: Canvas;
+		--web-scale-to-fit: true;
+		--web-scale-to-fit-type: width;
+		--web-enable-scale-up: true;
+		--web-scale-on-resize: true;
+		--web-center-vertically: true;
+		--web-enable-deep-linking: true;
+	}
+	#background {
+		position: absolute;
+		width: 1920px;
+		height: 2080px;
+		background-image: linear-gradient(180deg, rgba(35,35,35,1) 0%, rgba(151,4,4,1) 100%);
+	}
+
+	#Gruppe_2:hover {
+		cursor: pointer;
+	}
+	#S_logo_METAAAAA {
+		position: absolute;
+		width: 303px;
+		height: 303px;
+		left: 66px;
+		top: 0px;
+		overflow: visible;
+	}
+	#SECONDLIFE {
+		left: 63px;
+		top: 294px;
+		position: absolute;
+		overflow: visible;
+		width: 310px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Calibri;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 55px;
+		color: rgba(255,255,255,1);
+		letter-spacing: 0.6px;
+	}
+	#ROLEPLAY {
+		left: 217px;
+		top: 349px;
+		position: absolute;
+		overflow: visible;
+		width: 160px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Calibri;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 35px;
+		color: rgba(255,0,0,1);
+		letter-spacing: 0.6px;
+	}
+	#EINREISE_WIRD_VORBEREITET {
+		left: 0px;
+		top: 469px;
+		position: absolute;
+		overflow: visible;
+		width: 452px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Calibri;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 35px;
+		color: rgba(255,255,255,1);
+		letter-spacing: 0.6px;
+	}
+	#Rechteck_1 {
+		opacity: 0.66;
+		fill: rgba(30,30,30,1);
+	}
+	.Rechteck_1 {
+		position: absolute;
+		overflow: visible;
+		width: 209px;
+		height: 47px;
+		left: 9px;
+		top: 745px;
+	}
+	#Rechteck_2 {
+		opacity: 0.66;
+		fill: rgba(30,30,30,1);
+	}
+	.Rechteck_2 {
+		position: absolute;
+		overflow: visible;
+		width: 209px;
+		height: 47px;
+		left: 234px;
+		top: 745px;
+	}
+	#Icon_awesome-discord {
+		fill: rgba(255,255,255,1);
+	}
+	.Icon_awesome-discord {
+		overflow: visible;
+		position: absolute;
+		width: 23.472px;
+		height: 26.825px;
+		left: 20.05px;
+		top: 755.088px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#secondliferp {
+		left: 74px;
+		top: 760px;
+		position: absolute;
+		overflow: visible;
+		width: 81px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Calibri;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 15px;
+		color: rgba(255,255,255,1);
+		letter-spacing: 0.6px;
+	}
+	#secondliferp_q {
+		left: 299px;
+		top: 760px;
+		position: absolute;
+		overflow: visible;
+		width: 81px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Calibri;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 15px;
+		color: rgba(255,255,255,1);
+		letter-spacing: 0.6px;
+	}
+	#Icon_awesome-teamspeak {
+		fill: rgba(255,255,255,1);
+	}
+	.Icon_awesome-teamspeak {
+		overflow: visible;
+		position: absolute;
+		width: 27.49px;
+		height: 27.5px;
+		left: 245.499px;
+		top: 754.75px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Gruppe_2 {
+		position: absolute;
+		width: 81px;
+		height: 81px;
+		left: 1778px;
+		top: 466px;
+		overflow: visible;
+		transition: 1.5s;
+	}
+	#Gruppe_1 {
+		transition: 1.5s;
+	}
+	#Ellipse_1 {
+		fill: transparent;
+		stroke: rgba(156,0,0,1);
+		stroke-width: 6px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Ellipse_1 {
+		filter: drop-shadow(0px 2px 10px rgba(255, 0, 0, 1));
+		position: absolute;
+		overflow: visible;
+		width: 81px;
+		height: 81px;
+		left: 0px;
+		top: 0px;
+	}
+
+	.lds-ripple {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  left: 170px;
+  top: 580px;
+  height: 80px;
+}
+.lds-ripple div {
+  position: absolute;
+  border: 4px solid #fff;
+  opacity: 1;
+  border-radius: 50%;
+  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+.lds-ripple div:nth-child(2) {
+  animation-delay: -0.5s;
+}
+@keyframes lds-ripple {
+  0% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  4.9% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  5% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+    width: 72px;
+    height: 72px;
+    opacity: 0;
+  }
+}
+
+	#Icon_awesome-arrow-alt-circle- {
+		fill: rgba(156,0,0,1);
+	}
+	.Icon_awesome-arrow-alt-circle- {
+		filter: drop-shadow(0px 0px 10px rgba(152, 0, 0, 1));
+		overflow: visible;
+		position: absolute;
+		width: 49.052px;
+		height: 49.052px;
+		left: 16.974px;
+		top: 16.974px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+
+	#Gruppe_3 {
+		position: absolute;
+		width: 960px;
+		height: 1080px;
+		left: 1960px;
+		top: 0px;
+		overflow: visible;
+		transition: 1.5s;
+	}
+	#Pfad_1 {
+		opacity: 0.52;
+		fill: rgba(54,51,51,1);
+	}
+	.Pfad_1 {
+		overflow: visible;
+		position: absolute;
+		width: 1020px;
+		height: 1140px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#WICHTIG {
+		left: 409px;
+		top: 151px;
+		position: absolute;
+		overflow: visible;
+		width: 143px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Calibri;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 40px;
+		color: rgba(255,255,255,1);
+		letter-spacing: 0.6px;
+	}
+	#Beim_Betreten_des_Servers_Stim {
+		left: 170px;
+		top: 210px;
+		position: absolute;
+		overflow: visible;
+		width: 621px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Calibri;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 30px;
+		color: rgba(149,146,146,1);
+		letter-spacing: 0.6px;
+	}
+	#a_d7fa2043e29c10955563879bc4c3 {
+		filter: drop-shadow(0px 2px 20px rgba(155, 9, 9, 0.769));
+		position: absolute;
+		width: 82px;
+		height: 81px;
+		left: 338px;
+		top: 540px;
+		overflow: visible;
+	}
+	#Flo3990 {
+		left: 439px;
+		top: 540px;
+		position: absolute;
+		overflow: visible;
+		width: 125px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Calibri;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 30px;
+		color: rgba(255,255,255,1);
+		letter-spacing: 0.6px;
+	}
+	#Projektleitung {
+		left: 439px;
+		top: 576px;
+		position: absolute;
+		overflow: visible;
+		width: 185px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Calibri;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 30px;
+		color: rgba(203,0,0,1);
+		letter-spacing: 0.6px;
+	}
+	#logo {
+		filter: drop-shadow(0px 2px 20px rgba(155, 9, 9, 0.769));
+		position: absolute;
+		width: 82px;
+		height: 81px;
+		left: 338px;
+		top: 661px;
+		overflow: visible;
+	}
+	#le_xotic7320 {
+		left: 439px;
+		top: 661px;
+		position: absolute;
+		overflow: visible;
+		width: 179px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Calibri;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 30px;
+		color: rgba(255,255,255,1);
+		letter-spacing: 0.6px;
+	}
+	#Projektleitung_p {
+		left: 439px;
+		top: 697px;
+		position: absolute;
+		overflow: visible;
+		width: 185px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Calibri;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 30px;
+		color: rgba(203,0,0,1);
+		letter-spacing: 0.6px;
+	}
+	#SERVER-INHABER {
+		left: 346px;
+		top: 414px;
+		position: absolute;
+		overflow: visible;
+		width: 289px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Calibri;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 40px;
+		color: rgba(255,255,255,1);
+		letter-spacing: 0.6px;
+	}
+	#cursor {
+  width: 35px;
+  height: 35px;
+  position: fixed;
+  z-index: 10000;
+          }
+</style>
+<script id="applicationScript" type="text/javascript" src="rescale.js"></script>
+</head>
+<body>
+	<img id="cursor" src="S_logo_METAAAAA.png"/>
+<div id="Canvas">
+	<div id="background"></div>
+	<div id="Gruppe_1">
+		<img id="S_logo_METAAAAA" src="S_logo_METAAAAA.png" srcset="S_logo_METAAAAA.png 1x, S_logo_METAAAAA@2x.png 2x">
+			
+		<div id="SECONDLIFE">
+			<span>SECONDLIFE</span>
+		</div>
+		<div id="ROLEPLAY">
+			<span>ROLEPLAY</span>
+		</div>
+		<div class="lds-ripple"><div></div><div></div></div>
+		<div id="EINREISE_WIRD_VORBEREITET">
+			<span>EINREISE WIRD VORBEREITET...</span>
+		</div>
+		<svg class="Rechteck_1">
+			<rect id="Rechteck_1" rx="12" ry="12" x="0" y="0" width="209" height="47">
+			</rect>
+		</svg>
+		<svg class="Rechteck_2">
+			<rect id="Rechteck_2" rx="12" ry="12" x="0" y="0" width="209" height="47">
+			</rect>
+		</svg>
+		<svg class="Icon_awesome-discord" viewBox="0 0 23.472 26.825">
+			<path id="Icon_awesome-discord" d="M 15.57182312011719 12.74180221557617 C 15.57182312011719 13.55995941162109 14.96826553344727 14.23058032989502 14.20375633239746 14.23058032989502 C 13.45266151428223 14.23058032989502 12.83568954467773 13.55995941162109 12.83568954467773 12.74180221557617 C 12.83568954467773 11.92364501953125 13.43924713134766 11.25302314758301 14.20375633239746 11.25302314758301 C 14.96826553344727 11.25302314758301 15.57182312011719 11.92364501953125 15.57182312011719 12.74180221557617 Z M 9.308221817016602 11.25302314758301 C 8.54371452331543 11.25302314758301 7.940154552459717 11.92364501953125 7.940154552459717 12.74180221557617 C 7.940154552459717 13.55995941162109 8.557126045227051 14.23058032989502 9.308221817016602 14.23058032989502 C 10.07273006439209 14.23058032989502 10.67628955841064 13.55995941162109 10.67628955841064 12.74180221557617 C 10.68970203399658 11.92364501953125 10.07273006439209 11.25302314758301 9.308221817016602 11.25302314758301 Z M 23.47174072265625 2.762959003448486 L 23.47174072265625 26.8248462677002 C 20.09275245666504 23.83880043029785 21.17339706420898 24.82723426818848 17.24837684631348 21.1782169342041 L 17.9592342376709 23.65951538085938 L 2.749546766281128 23.65951538085938 C 1.233942866325378 23.65951538085938 0 22.42557334899902 0 20.89655685424805 L 0 2.762959003448486 C 0 1.233942866325378 1.233942866325378 0 2.749546766281128 0 L 20.72219467163086 0 C 22.23779678344727 0 23.47174072265625 1.233942866325378 23.47174072265625 2.762959003448486 Z M 19.64920043945312 15.47793674468994 C 19.64920043945312 11.15913677215576 17.71781158447266 7.658493041992188 17.71781158447266 7.658493041992188 C 15.7864236831665 6.209950923919678 13.94892024993896 6.25018835067749 13.94892024993896 6.25018835067749 L 13.76114559173584 6.464787006378174 C 16.04125595092773 7.162232875823975 17.10083770751953 8.16816520690918 17.10083770751953 8.16816520690918 C 13.91481113433838 6.421982288360596 10.17227363586426 6.421668529510498 7.081758499145508 7.779204368591309 C 6.585498809814453 8.00721549987793 6.290425300598145 8.16816520690918 6.290425300598145 8.16816520690918 C 6.290425300598145 8.16816520690918 7.403656482696533 7.108583927154541 9.817892074584961 6.411137580871582 L 9.683768272399902 6.250188827514648 C 9.683768272399902 6.250188827514648 7.846266746520996 6.209951877593994 5.914877414703369 7.658493518829346 C 5.914877414703369 7.658493518829346 3.983488321304321 11.15913677215576 3.983488321304321 15.47793674468994 C 3.983488321304321 15.47793674468994 5.110131740570068 17.42273902893066 8.074276924133301 17.51662445068359 C 8.074276924133301 17.51662445068359 8.570537567138672 16.91306686401367 8.972909927368164 16.40339469909668 C 7.269532203674316 15.89372158050537 6.625736236572266 14.82072639465332 6.625736236572266 14.82072639465332 C 6.82304573059082 14.95883464813232 7.148401260375977 15.13785743713379 7.175645351409912 15.15603828430176 C 9.439515113830566 16.42382621765137 12.65524864196777 16.83919334411621 15.54499912261963 15.62547302246094 C 16.01443099975586 15.45111179351807 16.53751945495605 15.19627380371094 17.08742713928223 14.83413982391357 C 17.08742713928223 14.83413982391357 16.41680526733398 15.93395805358887 14.6597785949707 16.43021965026855 C 15.0621509552002 16.93988990783691 15.54499912261963 17.51662445068359 15.54499912261963 17.51662445068359 C 18.5091438293457 17.42273902893066 19.64920043945312 15.47793674468994 19.64920043945312 15.47793674468994 Z">
+			</path>
+		</svg>
+		<div id="secondliferp">
+			<span>secondliferp</span>
+		</div>
+		<div id="secondliferp_q">
+			<span>secondliferp</span>
+		</div>
+		<svg class="Icon_awesome-teamspeak" viewBox="0 -0.002 27.49 27.5">
+			<path id="Icon_awesome-teamspeak" d="M 13.1162166595459 18.62593269348145 C 13.2451229095459 17.96528816223145 12.4716854095459 17.01460266113281 11.37598133087158 16.01020812988281 C 10.25342273712158 14.97895812988281 8.787114143371582 13.91011142730713 7.970706939697266 13.50727844238281 C 6.805178642272949 12.86274719238281 5.730959892272949 13.41059970855713 5.483889579772949 14.72651767730713 C 5.215334415435791 16.13374519348145 5.483889579772949 17.48726081848145 6.262698650360107 18.69575500488281 C 6.810550689697266 19.52827644348145 7.626956939697266 19.91499519348145 8.593753814697266 19.98481941223145 C 9.216801643371582 20.01704406738281 11.4135799407959 20.10298347473145 11.90771961212158 19.93110847473145 C 12.5468807220459 19.70015144348145 12.98730945587158 19.29731941223145 13.1162166595459 18.62593269348145 Z M 24.12696266174316 19.74312019348145 C 24.05547142028809 19.68371772766113 23.95918846130371 19.66360473632812 23.86989784240723 19.68942451477051 C 23.78060722351074 19.71524238586426 23.70991706848145 19.78363609313965 23.68115997314453 19.87202453613281 C 23.25147438049316 21.23628616333008 21.28028297424316 25.91450881958008 14.43750667572021 26.39790725708008 C 6.396975994110107 26.96187400817871 18.75049591064453 28.73970603942871 22.2470817565918 26.05415725708008 C 23.4663200378418 25.11958694458008 24.8037223815918 24.17427444458008 24.7500114440918 21.46724128723145 C 24.72852516174316 20.92476081848145 24.48682594299316 20.03369522094727 24.1269645690918 19.74312019348145 Z M 27.45704078674316 13.1688985824585 C 27.44092750549316 12.1537618637085 26.99512672424316 11.37495231628418 26.06055641174316 10.90229606628418 C 25.90479278564453 10.83247184753418 25.79200172424316 10.75727558135986 25.74365997314453 10.55854606628418 C 25.41884613037109 8.737678527832031 24.67607116699219 7.016976833343506 23.57374000549316 5.531737804412842 C 23.5146598815918 5.451170921325684 23.38575172424316 5.359862327575684 23.45557594299316 5.263182163238525 C 23.91211891174316 4.645506381988525 23.43946266174316 4.296385288238525 23.07959938049316 3.952635288238525 C 19.20166778564453 0.2032522112131119 14.68457698822021 -0.8800979852676392 9.528324127197266 0.702584981918335 C 7.374514579772949 1.363229870796204 5.559084415435791 2.614695072174072 4.049806118011475 4.32270336151123 C 3.834962368011475 4.55366039276123 3.689942836761475 4.811473369598389 3.888673305511475 5.101512432098389 C 4.049806118011475 5.316356182098389 3.958497524261475 5.434520244598389 3.834962368011475 5.601024150848389 C 2.771485328674316 7.089354991912842 2.051758527755737 8.73237419128418 1.724121689796448 10.52685642242432 C 1.686524152755737 10.75781345367432 1.568359971046448 10.84912300109863 1.380371570587158 10.94580173492432 C 0.6176759600639343 11.32177829742432 0.171875 11.93945503234863 0.04296865686774254 12.77197456359863 L 0 14.19477844238281 L 0 15.31733798980713 C 0 16.97163391113281 1.127930164337158 18.02437019348145 2.782227754592896 17.94917488098145 C 3.195801973342896 17.93306159973145 3.410645961761475 17.71821784973145 3.426759243011475 17.33149909973145 C 3.534181118011475 13.16890048980713 3.297852993011475 12.20747375488281 3.625489711761475 10.57466125488281 C 4.946779251098633 3.88764500617981 12.58447742462158 0.2680633664131165 18.54639434814453 3.51166820526123 C 22.09668922424316 5.478026390075684 23.93897438049316 8.539551734924316 24.04102516174316 12.61030578613281 C 24.08399391174316 14.12495517730713 24.04102516174316 15.64497470855713 24.04102516174316 17.15425300598145 C 24.04102516174316 17.53022956848145 24.15918922424316 17.82563972473145 24.54590797424316 17.91694831848145 C 25.84034156799316 18.18550300598145 27.18848609924316 17.27241706848145 27.40332984924316 15.94575691223145 C 27.55909156799316 15.02729988098145 27.45704078674316 14.09272861480713 27.45704078674316 13.16890048980713 Z M 18.88477325439453 20.23188972473145 C 20.84522247314453 20.38227844238281 22.06983184814453 18.70112609863281 22.02149391174316 16.98237609863281 C 21.90870094299316 14.5546407699585 18.46582794189453 16.09614562988281 17.30567169189453 16.55268859863281 C 13.3740291595459 18.06196594238281 14.88867855072021 19.50142097473145 16.1132869720459 19.81831359863281 L 18.88477325439453 20.23188972473145 Z">
+			</path>
+		</svg>
+	</div>
+	<div id="Gruppe_2">
+		<svg class="Ellipse_1">
+			<ellipse id="Ellipse_1" rx="40.5" ry="40.5" cx="40.5" cy="40.5">
+			</ellipse>
+		</svg>
+		<svg class="Icon_awesome-arrow-alt-circle-" viewBox="0.563 0.563 47.052 47.052">
+			<path id="Icon_awesome-arrow-alt-circle-" d="M 24.08831787109375 47.6141357421875 C 11.09220027923584 47.6141357421875 0.5625 37.08443450927734 0.5625 24.08831787109375 C 0.5625 11.09220027923584 11.09220027923584 0.5625 24.08831787109375 0.5625 C 37.08443450927734 0.5625 47.6141357421875 11.09220027923584 47.6141357421875 24.08831787109375 C 47.6141357421875 37.08443450927734 37.08443450927734 47.6141357421875 24.08831787109375 47.6141357421875 Z M 35.09233093261719 19.91438293457031 L 24.08831787109375 19.91438293457031 L 24.08831787109375 13.18865489959717 C 24.08831787109375 12.17362880706787 22.8551082611084 11.66137409210205 22.14364242553711 12.38232612609863 L 11.3008975982666 23.28199005126953 C 10.85504531860352 23.72784233093262 10.85504531860352 24.43930816650391 11.3008975982666 24.88516044616699 L 22.14364242553711 35.78482437133789 C 22.86459541320801 36.50577545166016 24.08831787109375 35.9935188293457 24.08831787109375 34.97849655151367 L 24.08831787109375 28.26225471496582 L 35.09233093261719 28.26225471496582 C 35.71841812133789 28.26225471496582 36.23067474365234 27.74999809265137 36.23067474365234 27.12390899658203 L 36.23067474365234 21.0527286529541 C 36.23067474365234 20.42663764953613 35.71841812133789 19.91438293457031 35.09233093261719 19.91438293457031 Z">
+			</path>
+		</svg>
+	</div>
+	<div id="Gruppe_3">
+		<svg class="Pfad_1" viewBox="0 0 960 1080">
+			<path id="Pfad_1" d="M 0 0 L 960 0 L 960 1080 L 0 1080 C 0 1080 54.00384521484375 797.5283203125 54.00384521484375 527.5283203125 C 54.00384521484375 257.5283203125 0 0 0 0 Z">
+			</path>
+		</svg>
+		<div id="WICHTIG">
+			<span>WICHTIG</span>
+		</div>
+		<div id="Beim_Betreten_des_Servers_Stim">
+			<span>Beim Betreten des Servers Stimmst du unserem<br/>Regelwerk zu.</span>
+		</div>
+		<img id="a_d7fa2043e29c10955563879bc4c3" src="a_d7fa2043e29c10955563879bc4c3.png" srcset="a_d7fa2043e29c10955563879bc4c3.png 1x, a_d7fa2043e29c10955563879bc4c3@2x.png 2x">
+			
+		<div id="Flo3990">
+			<span>Flo.#3990</span>
+		</div>
+		<div id="Projektleitung">
+			<span>Projektleitung</span>
+		</div>
+		<img id="logo" src="logo.png" srcset="logo.png 1x, logo@2x.png 2x">
+			
+		<div id="le_xotic7320">
+			<span>le xotic'#7320</span>
+		</div>
+		<div id="Projektleitung_p">
+			<span>Projektleitung</span>
+		</div>
+		<div id="SERVER-INHABER">
+			<span>SERVER-INHABER</span>
+		</div>
+	</div>
+</div>
+</body>
+<audio id="song" src="song.mp3" autoplay>
+<p>Wenn Du dies liest, unterstützt dein PC die Hintergrundmusik nicht.</p>
+</audio>
+<script>
+	var showed = false
+	$("#Gruppe_2").click(function(){
+		if (showed) {
+		document.getElementById("Gruppe_2").style.left = "1778px";
+		document.getElementById("Gruppe_1").style.left = "743px";
+		document.getElementById("Gruppe_3").style.left = "1960px";
+		showed = false
+		} else {
+		document.getElementById("Gruppe_2").style.left = "800px";
+		document.getElementById("Gruppe_1").style.left = "200px";
+		document.getElementById("Gruppe_3").style.left = "960px";
+		showed = true
+		}
+	})
+
+	window.onload = function() 
+{
+  document.body.addEventListener("mousemove", function(event)
+  {
+        var cursor = document.getElementById("cursor");
+        var x = event.pageX - cursor.width + 7;
+        var y = event.pageY - 7;
+
+        cursor.style.left = x;
+        cursor.style.top = y;
+  });
+}
+
+                                var audio = document.getElementById("song");
+                                audio.volume = 0.2;
+
+
+								function toggleAudio() {
+									if(audio.paused) {
+										audio.play();
+									} else {
+										audio.pause();
+									}
+								}
+
+								document.addEventListener('keypress', function (evt) {
+									if(evt.keyCode == 32) {
+										toggleAudio();
+									}
+								});
+                              
+</script>
+</html>
